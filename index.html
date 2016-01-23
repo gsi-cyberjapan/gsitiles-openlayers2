@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<div id="map">
+<div id="map"></div>
 <script>
 var projection3857 = new OpenLayers.Projection("EPSG:3857");
 var projection4326 =  new OpenLayers.Projection("EPSG:4326");
@@ -41,6 +41,5 @@ map.addLayer(new OpenLayers.Layer.XYZ("標準地図",
 map.setCenter(new OpenLayers.LonLat(138.7313889, 35.3622222)
   .transform(projection4326, projection3857), 5);
 </script>
-</div>
 </body>
 </html>
