@@ -32,7 +32,7 @@ var map = new OpenLayers.Map({
   projection: projection3857
 });
 
-map.addLayer(new OpenLayers.Layer.XYZ("標準地図", 
+map.addLayer(new OpenLayers.Layer.XYZ("標準地図",
   "http://cyberjapandata.gsi.go.jp/xyz/std/${z}/${x}/${y}.png", {
     attribution: "<a href='http://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
     maxZoomLevel: 18
@@ -41,5 +41,6 @@ map.addLayer(new OpenLayers.Layer.XYZ("標準地図",
 map.setCenter(new OpenLayers.LonLat(138.7313889, 35.3622222)
   .transform(projection4326, projection3857), 5);
 </script>
+</div>
 </body>
 </html>
