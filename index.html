@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<div id="map">
+<div id="map"></div>
 <script>
 var projection3857 = new OpenLayers.Projection("EPSG:3857");
 var projection4326 =  new OpenLayers.Projection("EPSG:4326");
@@ -32,7 +32,7 @@ var map = new OpenLayers.Map({
   projection: projection3857
 });
 
-map.addLayer(new OpenLayers.Layer.XYZ("標準地図", 
+map.addLayer(new OpenLayers.Layer.XYZ("標準地図",
   "http://cyberjapandata.gsi.go.jp/xyz/std/${z}/${x}/${y}.png", {
     attribution: "<a href='http://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
     maxZoomLevel: 18
